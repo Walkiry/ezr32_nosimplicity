@@ -1,4 +1,4 @@
-# ezr32_nosimplicity
+#No Simplicity Studio (When stable enough would be Complexity studio) 
 A base project to avoid using the the simplicity studio based eclipse
 
 This is project aims to ease development of application on silicon labs hardware (As for now only the EZR32HG is supported).
