@@ -1,5 +1,6 @@
 #No Simplicity Studio (When stable enough would be Complexity studio)
 [![Build Status](https://travis-ci.org/Walkiry/ezr32_nosimplicity.svg?branch=master)](https://travis-ci.org/Walkiry/ezr32_nosimplicity)
+
 A base project to avoid using the the simplicity studio based eclipse
 
 This is project aims to ease development of application on silicon labs hardware (As for now only the EZR32HG is supported).
