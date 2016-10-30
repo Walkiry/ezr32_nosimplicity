@@ -45,7 +45,7 @@ include/version.h: ./Makefile
  
 symlinks:
 	rm -f include/asm
-	( cd include ; ln -sf ../cpu/$(ARCH)/asm asm)
+	( cd include ; ln -sf ../cpu/$(ARCH)/include/asm asm)
 
 config: symlinks
 	$(CONFIG_SHELL) scripts/Configure cpu/$(ARCH)/config.in
