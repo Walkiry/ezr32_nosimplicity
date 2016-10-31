@@ -11,6 +11,6 @@ install:
 
 script:
 - cp configs/cm0p_default_defconfig ./.config
-- make 
+- make ARCH=cm0p cm0p_default_defconfig
 
         
