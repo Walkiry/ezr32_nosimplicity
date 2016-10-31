@@ -1,7 +1,6 @@
 language: c
 
 env:
-- ARCH=arm
 - CROSS_COMPILE=$HOME/gcc-arm-none-eabi/bin/arm-none-eabi-
 
 compiler: gcc
