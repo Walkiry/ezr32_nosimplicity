@@ -1,3 +1,7 @@
 *.o
 .config
 scripts/lxdialog/lxdialog
+*.log
+include/asm
+include/autoconf.h
+config.in
