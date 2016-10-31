@@ -1,3 +1,4 @@
+*.cmd
 *.o
 .config
 scripts/lxdialog/lxdialog
