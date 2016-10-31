@@ -9,7 +9,7 @@ compiler: arm-none-eabi-gcc
 install: 
 - ./.travis_scripts/install_toolchain.sh  
 
-script
+script:
 - cp configs/cm0p_default_defconfig ./.config
 - make 
 
