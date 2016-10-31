@@ -4,7 +4,7 @@ env:
 - ARCH=arm
 - CROSS_COMPILE=$HOME/gcc-arm-none-eabi/bin/arm-none-eabi-
 
-compiler: arm-none-eabi-gcc
+compiler: gcc
 
 install: 
 - ./.travis_scripts/install_toolchain.sh  
