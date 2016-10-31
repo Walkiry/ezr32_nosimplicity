@@ -259,33 +259,9 @@ CROSS_COMPILE	?= $(CONFIG_CROSS_COMPILE:"%"=%)
 UTS_MACHINE 	:= $(ARCH)
 SRCARCH 	:= $(ARCH)
 
-# Additional ARCH settings for x86
-ifeq ($(ARCH),i386)
-        SRCARCH := x86
-endif
-ifeq ($(ARCH),x86_64)
-        SRCARCH := x86
-endif
-
-# Additional ARCH settings for sparc
-ifeq ($(ARCH),sparc32)
-       SRCARCH := sparc
-endif
-ifeq ($(ARCH),sparc64)
-       SRCARCH := sparc
-endif
-
-# Additional ARCH settings for sh
-ifeq ($(ARCH),sh64)
-       SRCARCH := sh
-endif
-
-# Additional ARCH settings for tile
-ifeq ($(ARCH),tilepro)
-       SRCARCH := tile
-endif
-ifeq ($(ARCH),tilegx)
-       SRCARCH := tile
+# Additional ARCH settings for Cortext M0+
+ifeq ($(ARCH),cm0p)
+        SRCARCH := cm0p
 endif
 
 # Where to locate arch specific headers
@@ -376,8 +352,8 @@ CFLAGS_KCOV	= -fsanitize-coverage=trace-pc
 
 # Use USERINCLUDE when you must reference the UAPI directories only.
 USERINCLUDE    := \
-		-I$(srctree)/arch/$(hdr-arch)/include/uapi \
-		-Iarch/$(hdr-arch)/include/generated/uapi \
+		-I$(srctree)/cpu/$(hdr-arch)/include/uapi \
+		-Icpu/$(hdr-arch)/include/generated/uapi \
 		-I$(srctree)/include/uapi \
 		-Iinclude/generated/uapi \
                 -include $(srctree)/include/linux/kconfig.h
@@ -464,9 +440,9 @@ endif
 PHONY += asm-generic
 asm-generic:
 	$(Q)$(MAKE) -f $(srctree)/scripts/Makefile.asm-generic \
-	            src=asm obj=arch/$(SRCARCH)/include/generated/asm
+	            src=asm obj=cpu/$(SRCARCH)/include/generated/asm
 	$(Q)$(MAKE) -f $(srctree)/scripts/Makefile.asm-generic \
-	            src=uapi/asm obj=arch/$(SRCARCH)/include/generated/uapi/asm
+	            src=uapi/asm obj=cpu/$(SRCARCH)/include/generated/uapi/asm
 
 # To make sure we do not include .config for any of the *config targets
 # catch them early, and hand them over to scripts/kconfig/Makefile
