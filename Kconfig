@@ -10,7 +10,6 @@ config SRCARCH
 
 
 source "init/Kconfig"
-
 source "cpu/Kconfig"
 
 
