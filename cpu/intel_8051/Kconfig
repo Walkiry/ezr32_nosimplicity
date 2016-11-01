@@ -1,0 +1,12 @@
+menu "CPU model platform"
+
+choice 
+	prompt "Chooce CPU"
+
+config CPU_C8051F00
+	bool "EZR32HG model"
+
+endchoice
+endmenu
+
+
