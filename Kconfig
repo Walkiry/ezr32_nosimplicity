@@ -8,4 +8,10 @@ config SRCARCH
 	string
 	option env="SRCARCH"
 
-source "cpu/$SRCARCH/Kconfig"
+
+source "init/Kconfig"
+
+source "cpu/Kconfig"
+
+
+

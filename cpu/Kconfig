@@ -1,0 +1,18 @@
+menu "CPU architecture"
+
+choice 
+	prompt "ARM system type"
+	default CPU_ARM_CORTEXM0P
+
+config CPU_ARM_CORTEXM0P
+	bool "ARM Cortex-M0+"
+
+config CPU_ARM_CORTEXM3
+	bool "ARM Cortex-M3"
+
+config CPU_8051
+	bool "8051 8bits"
+	
+endchoice
+
+endmenu
