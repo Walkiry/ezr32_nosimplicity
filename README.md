@@ -12,7 +12,10 @@ the very buggy eclipse etc...).
 
 Futher work that has to be done:
 
-* [ ] Rework tree organization
 * [x] Using Kconfig instead of the current configuration
-* [ ] Add different platforms
+* [ ] Rework tree organization
 * [ ] Add device tree
+* [ ] Demonstration on EZR32
+* [ ] Add different platforms
+
+
