@@ -12,6 +12,7 @@ the very buggy eclipse etc...).
 
 Futher work that has to be done:
 
-* Rework tree organization
-* Using Kconfig instead of the current configuration
-* Add different platforms
+* [ ] Rework tree organization
+* [x] Using Kconfig instead of the current configuration
+* [ ] Add different platforms
+* [ ] Add device tree
